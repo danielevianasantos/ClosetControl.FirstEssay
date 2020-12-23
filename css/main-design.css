@@ -2,7 +2,7 @@
 .box {
     position: relative;
     width: 
-    940px;
+    80%;
 	margin: 0 auto;
 }
 nav {
@@ -13,20 +13,27 @@ nav {
 
 nav li {
 	display: inline;
-	margin: 0 0 0 15px;
+	margin: 0 0 0 2rem;
 }
 
 nav a {
 	text-transform: uppercase;
 	color: #000000;
 	font-weight: bold;
-	font-size: 22px;
+	font-size: 1.5rem;
 	text-decoration: none;
 }
 
-nav a:hover {
-	color: --hovernavitemcolor;
+nav li a:hover {
+	color: var(--hovernavitemcolor);
 	text-decoration: underline;
+}
+.title {
+    font-size: var(--focus-title);
+    font-family: Lucida Handwriting;
+    color: var(--lightfontcolor);
+    text-align: center;
+    grid-column: 2 / 4;
 }
 .topics {
     display: grid;
@@ -44,6 +51,10 @@ nav a:hover {
     grid-row: 2 / 2;
     object-fit: contain;
 }
+.season_buttons {
+    background-color: transparent;
+    border-color: transparent;
+}
 .subtitles {
     padding: .6rem;
     text-align: center;
@@ -52,11 +63,14 @@ nav a:hover {
     color: black;
     font-size: var(--focus-title-width);
     font-weight: var(--focused-title-weight);
+
 }
 .seasons {
     height: auto; 
     width: auto;
     border-radius: 45%; 
+    font-size: var(--body-width);
+    font-weight: var(--title-width);
 }
 .fall {
     background: linear-gradient(var(--lightpinkused),transparent), url('./assets/fall.png') no-repeat  center; 
