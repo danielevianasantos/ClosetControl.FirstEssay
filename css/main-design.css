@@ -1,6 +1,8 @@
+@import url(_most-used-variables.css);
 .box {
     position: relative;
-	width: 940px;
+    width: 
+    940px;
 	margin: 0 auto;
 }
 nav {
@@ -23,7 +25,7 @@ nav a {
 }
 
 nav a:hover {
-	color: #C78C19;
+	color: --hovernavitemcolor;
 	text-decoration: underline;
 }
 .topics {
@@ -31,13 +33,13 @@ nav a:hover {
     grid-gap: .2rem;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 33.33% 33.33% 33.33%;
-    height: 80vh;
+    height: 80vh;  
 }
 .winter {
     height: auto; 
     width: auto;
     border-radius: 45%; 
-    background: linear-gradient(rgb(211, 100, 211),transparent), url('./assets/winter.jpg') no-repeat  center; 
+    background: linear-gradient(var(--lightpinkused),transparent), url('./assets/winter.jpg') no-repeat  center; 
     grid-column: 2 / 2;
     grid-row: 2 / 2;
     object-fit: contain;
@@ -46,28 +48,28 @@ nav a:hover {
     padding: .6rem;
     text-align: center;
     width: 100%;
+    font-family: var(--titles-font-family);
+    color: black;
+    font-size: var(--focus-title-width);
+    font-weight: var(--focused-title-weight);
 }
-.fall {
+.seasons {
     height: auto; 
     width: auto;
     border-radius: 45%; 
-    background: linear-gradient(rgb(211, 100, 211),transparent), url('./assets/fall.png') no-repeat  center; 
+}
+.fall {
+    background: linear-gradient(var(--lightpinkused),transparent), url('./assets/fall.png') no-repeat  center; 
     grid-column: 3 / 3;
     grid-row: 2 / 2;
 }
 .summer {
-    height: auto; 
-    width: auto;
-    border-radius: 45%; 
-    background: linear-gradient(rgb(211, 100, 211),transparent), url('./assets/summer.jpg') no-repeat  center; 
+    background: linear-gradient(var(--lightpinkused),transparent), url('./assets/summer.jpg') no-repeat  center; 
     grid-column: 2 / 2;
     grid-row: 3 / 3;
 }
 .spring {
-    height: auto; 
-    width: auto;
-    background: linear-gradient(rgb(211, 100, 211),transparent), url('./assets/spring.jpg') no-repeat  center; 
+    background: linear-gradient(var(--lightpinkused),transparent), url('./assets/spring.jpg') no-repeat  center; 
     grid-column: 3 / 3;
     grid-row: 3 / 3;
-    border-radius: 45%; 
 }

@@ -6,22 +6,22 @@
         "pagesheader"
         "pagescontent"
         "pagesfooter";
-    grid-template-columns:  auto;
+    grid-template-columns: auto;
     grid-template-rows: 17.5vh 80vh  2.5vh; 
     font-style: italic;
 }
 
 .pagesheader {
-    background:linear-gradient(rgb(97, 45, 97),rgb(211, 100, 211));
+    background:linear-gradient(var(--darkpinkused),var(--lightpinkused));
     grid-area: pagesheader;
     font-family: Lucida Handwriting;
-    color: rgb(199, 199, 199);
+    color: var(--lightfontcolor);
     padding-top: 0.25rem;
 }
  
 .pagescontent {
     grid-area: pagescontent;
-    background: linear-gradient(rgb(211, 100, 211),transparent), url('./assets/background.jpg') no-repeat  center; 
+    background: linear-gradient(var(--lightpinkused),transparent), url('./assets/background.jpg') no-repeat  center; 
 }
 
 .pagesfooter {
