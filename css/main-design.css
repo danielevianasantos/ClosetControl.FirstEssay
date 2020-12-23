@@ -55,6 +55,10 @@ nav li a:hover {
     background-color: transparent;
     border-color: transparent;
 }
+.season_buttons:hover {
+    color: pink;
+	text-decoration: underline;
+}
 .subtitles {
     padding: .6rem;
     text-align: center;
