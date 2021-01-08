@@ -91,3 +91,22 @@ nav li a:hover {
     grid-column: 3 / 3;
     grid-row: 3 / 3;
 }
+
+@media(max-width: 769px) {
+    nav a{
+        display: block;
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    nav {
+        left: 0;
+    }
+    .title {
+        font-size: 1rem;
+        justify-content: center;
+        align-self: center;
+    }
+    .subtitles {
+        font-size: 1.2rem;
+    }
+}
