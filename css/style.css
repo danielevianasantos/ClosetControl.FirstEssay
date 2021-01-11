@@ -31,3 +31,11 @@
     padding-right: 0.5rem;
     font-family: Lucida Handwriting;
 }
+@media(max-width: 769px) {
+    .pagesheader {
+        padding-top: 0%;
+    }
+    .app {
+        grid-template-rows: 19.85vh 78vh  2.15vh; 
+    }
+}

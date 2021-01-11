@@ -42,15 +42,6 @@ nav li a:hover {
     grid-template-rows: 33.33% 33.33% 33.33%;
     height: 80vh;  
 }
-.winter {
-    height: auto; 
-    width: auto;
-    border-radius: 45%; 
-    background: linear-gradient(var(--lightpinkused),transparent), url('./assets/winter.jpg') no-repeat  center; 
-    grid-column: 2 / 2;
-    grid-row: 2 / 2;
-    object-fit: contain;
-}
 .season_buttons {
     background-color: transparent;
     border-color: transparent;
@@ -76,6 +67,15 @@ nav li a:hover {
     font-size: var(--body-width);
     font-weight: var(--title-width);
 }
+.winter {
+    height: auto; 
+    width: auto;
+    border-radius: 45%; 
+    background: linear-gradient(var(--lightpinkused),transparent), url('./assets/winter.jpg') no-repeat  center; 
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+    object-fit: contain;
+}
 .fall {
     background: linear-gradient(var(--lightpinkused),transparent), url('./assets/fall.png') no-repeat  center; 
     grid-column: 3 / 3;
@@ -95,16 +95,37 @@ nav li a:hover {
 @media(max-width: 769px) {
     nav a{
         display: block;
-        font-size: 1.1rem;
+        font-size: 1.3rem;
         text-align: center;
     }
     nav {
         left: 0;
     }
     .title {
+        font-size: 1.3rem;
+        justify-content: center;
+        align-self: flex-start;
+        position: relative;
+    }
+    .subtitles {
+        font-size: 1.45rem;
+    }
+    .topics {
+        height: 78vh;  
+        position: relative;
+        grid-template-rows: 25% 25% 25% 25%;
+    }
+    .seasons {
+        border-radius: 50%; 
+    }
+}
+@media(max-width: 369px) {
+    nav a{
+        font-size: 1.1rem;
+    }
+    .title {
         font-size: 1rem;
         justify-content: center;
-        align-self: center;
     }
     .subtitles {
         font-size: 1.2rem;
